@@ -1,0 +1,116 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container */
+  .app-container {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  }
+  
+  /* Glass card */
+  .glass-card {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Title */
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Search */
+  .search-box {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  
+  .search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-box button {
+    background: #00c6ff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 0 8px 8px 0;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-box button:hover {
+    background: #0072ff;
+  }
+  
+  /* Weather Info */
+  .weather-data {
+    margin-top: 20px;
+  }
+  
+  .city-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .temp {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .desc {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ddd;
+  }
+  
+  /* Extra Info */
+  .extra-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .info-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 14px;
+    color: #fff;
+  }
+  
